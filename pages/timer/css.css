@@ -1,0 +1,175 @@
+/*
+ * Reset css
+ */
+ol, ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+p, h6 {
+    margin: 0;
+}
+
+body {
+    line-height: 1;
+}
+
+/*
+ * Global styles
+ */
+* {
+    box-sizing: border-box;
+}
+
+/*
+ * Timer
+ */
+#wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 750px;
+    padding-bottom: 16px;
+    
+    font-family: 'Expletus Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+#list-requirements {
+    margin-top: 10px;
+    padding-left: 35px;
+}
+
+#my-timer-title {
+    font-family: 'Tilt Neon', sans-serif;
+    font-size: 14px;
+}
+
+#possibilities-list {
+    list-style-type: none;
+}
+
+#video {
+    width: 100%;
+}
+
+.hot-keys-option {
+    display: block;
+    padding-left: 18px;
+}
+
+#validation-list {
+    list-style-type: none;
+}
+
+.img {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+/*
+ * Gaps
+ */
+.top-16 {
+    margin-top: 16px;
+}
+
+.top-10 {
+    margin-top: 10px;
+}
+
+.top-8 {
+    margin-top: 8px;
+}
+
+.top-5 {
+    margin-top: 5px;
+}
+
+.top-2 {
+    margin-top: 2px;
+}
+
+/*
+ * Demo - GitHub
+ */
+#sticky-area {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -220px;
+    width: 200px;
+}
+
+#sticky-wrapper {
+    position: sticky;
+    top: 5px;
+}
+
+#demo-github-links {
+    display: flex;
+}
+
+#demo {
+    flex: 1;
+
+    display: block;
+    margin-right: 3px;
+    padding: 7px 0;
+
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+
+    background-color: #305765;
+    border-radius: 3px;
+}
+
+#github-wrapper {
+    flex: 1;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+
+    color: #000;
+    text-decoration: none;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 3px; 
+}
+
+#github-img {
+    margin-right: 3px;
+    width: 21px;
+}
+
+#github-title {
+    padding-top: 2px;
+}
+
+#github-text {
+    margin-top: 3px;
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    color: brown;
+}
+
+@font-face {
+    font-family: "Tilt Neon";
+    src: url(./assets/fonts/Tilt-Neon.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Expletus Sans";
+    src: url(./assets/fonts/Expletus-Sans.ttf) format('truetype');
+}

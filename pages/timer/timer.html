@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Timer</title>
+        <link rel="stylesheet" href="./css.css">
+    </head>
+    <body>
+      <div id="wrapper">
+        <p class="top-16">
+            Potrzebowałem timera, żeby kiedy ja długo pracuję przy komputerze przypominałby mi o tym, 
+            że trzeba zrobić przerwę lub ćwieczenia dla oczy.
+            Potrzebowałem również timera, który uruchamiałby się w przeglądarce.
+        </p>
+        <p class="top-8">
+            Ja zacząłem szukać w internecie.
+            I to co ja znajdowałem mi się nie podobało.<br>
+            Dlatego postanowiłem napisać samemu.<br>
+            Napisać timer, który:
+            <ol id="list-requirements">
+              <li>Będzie bez reklamy.</li>
+              <li>Dobrze wygląda.</li>
+              <li>
+                  I mi była potrzebna tylko jedna funkcja - ustawić czas i uruchomić,
+                  i zeby oprócz wyświetlania czasu nie było żadnych innych elementów interfejsu,
+                  które zajmowałyby miejsce na stronie timera.
+                  <br>
+                  Ponieważ z reguły timery, na które się natknąłem, miały wiele różnych funkcji.
+                  W związku z tym dla każdej funkcji tworzyły się elementy interfejsu.
+                  I wokół wyświetlacza czasu znajdowały się jeszce różne przyciski, pola wejściowe itp. 
+                  Dla mnie to tylko przeciążało interfejs.
+                  Chciałem, aby był minimalizm.
+              </li>
+            </ol>
+        </p>
+
+        <h6 id="my-timer-title" class="top-16">I tak - mój timer!</h6>
+        <ol id="possibilities-list">
+          <li class="top-2">
+            <div class="flex">
+              <span>1.&nbsp;</span>
+              <span>
+                  Jako tło użytkownik może użyć dowolnego obrazku.<br>
+                  Na przykład: Tutaj ja wziąłem kadry z filmu "8 Mila".<br>
+                  Obrazy losowo zmieniają się.<br>
+                  Podczas zmiany odbywa się animacja płynnego przejścia.
+              </span>
+            </div>
+            <video id="video" class="top-5" autoplay muted loop>
+                <source src="../../assets/projects/timer/timer.mp4" type="video/mp4">
+            </video>
+          </li>
+          <li class="top-16">
+              <span>2. Karta przeglądarki pokazuje, ile godzin i minut pozostało.</span>
+              <img class="img top-5" src="../../assets/projects/timer/time-visibility.png">
+          </li>
+          <li class="top-16">
+            <span>3. Również ja jeszcze zrobiłem skróty klawiszowe:</span>
+            <ul>
+              <li class="hot-keys-option">
+                  <b>Enter</b> - Urochomić.
+              </li>
+              <li class="hot-keys-option">
+                  <b>Пробел</b> - Urochomić/Zatrzymać.
+              </li>
+              <li>
+                  <span class="hot-keys-option top-8">
+                      <b>↓</b> - Ustawia kursor w polu wprowadzania, w którym wyświetlane są minuty.
+                  </span>
+                  <img class="img top-5" src="../../assets/projects/timer/keydown-38.png">
+              </li>
+              <li class="top-16">
+                  <span class="hot-keys-option">
+                      <b>↑</b> - Umieszcza kursor w polu wprowadzania, w którym znajdują się godziny.
+                  </span>
+                  <img class="img top-5" src="../../assets/projects/timer/keydown-40.png">
+              </li>
+              <li class="top-10">
+                  <span class="hot-keys-option">
+                      <b>→←</b> Przesuwa kursor w lewo/prawo, gdy pola wprowadzania mają fokus.
+                  </span>
+              </li>
+            </ul>
+          </li>
+          <li class="flex top-16">
+            <div class="flex">
+              <span>4.&nbsp;</span>
+              <div>
+                <span>Walidacja:</span>
+                <ol id="validation-list">
+                  <li>
+                      4.1 W polach wprowadzania nie można wprowadzać lite.
+                  </li>
+                  <li>
+                    <div class="flex">
+                      <span>4.2&nbsp;</span>
+                      <span>
+                          Jeśli użytkownik wpisze liczbę mniejszą niż 10 w minutach,<br>
+                          na przykład 2, wtedy na początek zostanie dodane 0, więc będzie 02.
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flex">
+                      <span>4.3&nbsp;</span>
+                      <span>
+                          A jeśli pozostawi pole wejściowe puste (""),<br>
+                          wówczas w polu godzin zostanie wstawione 0, a w polu minut 00.
+                      </span>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </li>
+        </ol>
+
+        <div id="sticky-area">
+          <div id="sticky-wrapper">
+            <div id="demo-github-links">
+              <a id="demo" href="https://office-plankton.github.io/timer/" target="_blank">Demo</a>
+              <a id="github-wrapper" href="https://github.com/office-plankton/timer/blob/master/scripts/scripts.js" target="_blank">
+                  <img id="github-img" src="../../assets/github.png">
+                  <span id="github-title">GitHub</span>
+              </a>
+            </div>
+            <small id="github-text">
+                Ten projekt jest dobry do oceny tego, jak piszę kod.
+                Jest to mały projekt. Prawie cały kod znajduje się w jednym pliku JS, więc łatwo będzie go zrozumieć.
+            </small>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>

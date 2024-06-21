@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>mDPO</title>
+        <link rel="stylesheet" href="./css.css">
+    </head>
+    <body>
+      <div id="images-wrapper">
+        <img src="../../assets/projects/mDPO/login.png">
+        <img src="../../assets/projects/mDPO/page.png">
+        <small id="images-text">
+            Jest to projekt, nad którym pracowałem najwięcej, chciałbym opublikować więcej zrzutów ekranu, ale nie mam prawa
+        </small>
+      </div>
+
+      <div id="text-wrapper">
+        <p class="introduction-p">
+            <b>mDPO</b> - system zarządzania ochroną danych osobowych.
+        </p>
+
+        <p class="introduction-p">
+           Był to główny projekt, nad którym pracowałem w Mikrobit.
+           Ja pisałem ten projekt sam. Ponad 3 lata.
+           Byłem odpowiedzialny za Front (Angular) i Back (Symfony).
+           Oprócz napisania kodu, ja zajmowałem się jeszcze projektowaniem aplikacji razem z IOD.
+        </p>
+
+        <p class="introduction-p">
+            Dla mnie w tym projekcie nie chodziło tylko o zarabianie pieniędzy.
+            Myślałem, że z jego pomocą ja zrobię coś pożytecznego na tym świecie.
+            Że ja razem z moim partnerem IOD stworzymy coś wybitnego,
+            że będziemy twórcami programu, z którego będzie korzystać wiele osób.
+            Ale sprzedaż nie poszła. Wygląda na to, że ludziom to nie jest potrzebne. Projekt został zamrożony.
+        </p>
+            
+        <h4 id="description-work-title">
+            Krótki opis tego, co zrobiłem w projekcie (To, co pamiętam i umiarkowanie łatwe do opisania)
+        </h4>
+        <div id="flex-container">
+            <div class="one-third">
+                <h5>Tworzyłem elementy interfejsu</h5>
+                <p>
+                    Dla strony napisałem takie elementy jak: 
+                    Paginacja, Breadcrumbs, Okno Modalne, Preloader, 
+                    Side Navigation Bar, Podpowiedzi (żarówki), Checkboks-y, 
+                    Pole wielowierszowe które ma wysokość kontentu 
+                    (Jeżeli będziesz usuwać wiersz tekstu to wysokość 
+                    sama się zmniejszy, jeżeli dodasz wiersz to się zwiększy),
+                    Okno ostrzeżenia, Potwierdzenia usunięcia,
+                    Sortowanie po kliknięciu na tytuł kolumny, 
+                    Komunikaty po zakończeniu akcji (np. udało się lub nie tworzenie czegoś),
+                    Przycisk “Wróć do góry strony” і jeszcze kilka elmentów które mi trudno opisać.
+                </p>
+                <h5>
+                    Wygląd aplikacji i rozmieszczenie elementów interfejsu
+                </h5>
+                <h5>Standardowe operacje dla wielu elementów aplikacji</h5>
+                <p>
+                    Podgląd, tworzenie, edycja, usuwanie, zaznaczenie że są jakby usunięte.
+                </p>
+                <h5>Historia zmian</h5>
+                <p>
+                    Napisałem również funkcję, która porównuje wszystkie dane elementu 
+                    które były przed edycją z danymi uzyskanymi po edycji.
+                    I wtedy można zobaczyć które pole zostało zmienione, 
+                    starą i nową wartość (dwie kolumny było/jest),
+                    który element został dodany/nowy lub usunięty.
+                </p>
+                <h5>Wysyłanie wiadomości na adres e-mail</h5>
+                <p>
+                    Robiłem wysyłanie powiadomień, na przykład jeśli administrator zmieni komuś hasło,
+                    lub informować osobę o tym do wykonania jakich operacji ona zostałą upoważniona,
+                    lub jeżeli coś się zdarzyło i trzeba pilnie zareagować.<br>
+                    Również po próbie wysłania wiadomości, użytkownikowi wyświetlane są
+                    informacje o wysłanych wiadomościach - czy udało się wysłąć, czas wysłania.
+                </p>
+                <h5>Przygotowanie danych do drukowania i samo drukowanie (Zapisywanie danych do PDF)</h5>
+                <p>
+                    W aplikacji były tzw. rejestry.
+                    Jest to strona, na której trzeba było wyświetlić BARDZO dużą ilość informacji.
+                    Zebrać dane z wielu tabel.
+                    Przemyślałem strukturę i ułożyłem wszystko tak, aby pomimo
+                    dużej ilości informacji ona była łatwa do postrzegania, 
+                    łatwo było zobaczyć, gdzie kończy się jedna część, a zaczyna druga.
+                    I oprócz wyświetlania informacji, rejestr można jeszcze wydrukować,
+                    ja zrobiłem osobną wersję rejestru dla wydruku.
+                </p>
+            </div>
+            <div class="one-third">
+                <h5>Tworzenie użytkowników i logowanie</h5>
+                <p>
+                    Podczas tworzenia użytkownika hasło jest haszowane.
+                    Również walidacja - minimalna liczba znaków, żeby były cyfry, małe i duże litery.
+                    Jeszcze również zrobiłem pole "Powtórz hasło".<br>
+                    Na stronie logowania w celu bezpieczeństwa zrobiłem 
+                    tymczasowe blokowanie wejścia po kilku nieudanych próbach logowania.<br>
+                    Po zalogowaniu zapisywałem dane w cookie żeby użytkowniku nie trzeba było za każdym razem się logować.
+                </p>
+                <h5>Formularze (Robiłem tylko formularze reaktywne)</h5>
+                <p>
+                    W programie zrobiłem wiele formularzy.
+                    Prawie każda strona to jakaś formularz.<br>
+                    Było trzeba zrobić różne relacji między elementami formularza.
+                    Na przykład:
+                    Jeśli pewna wartość zostanie wybrana z przycisków radiowych, pokaż mi jeszcze dwa pola wejściowe,
+                    lub na podstawie opcji wybranej w jednym selektorze tworzona jest lista do wyboru w innym selektorze.<br>
+                    Walidację zrobiłem po stronie Front i Back.
+                    Na przykład:
+                    Żeby nie było możliwości stworzenia osoby z identyfikatorem, który już istnieje.<br>
+                    Również robiłem kastomowe walidatory.
+                    Na przykład:
+                    Sprawdzenie typu pliku i maksymalna ilość MB którą plik nie może przekraczać.<br>
+                    Podczas edycji dodałem potwierdzenie wyjścia, jeśli wartość chociażby jednego pola
+                    w formularzu była zmienna i ta zmiana nie została zapisana (canDeactivate).
+                </p>
+                <h5>Import XML (walidacja, użytkownik otrzymuje informacje o tym, co zostanie zmienione po importowaniu)</h5>
+                <p>
+                    Napisałem konwersję pliku XML do obiektu Js.<br>
+                    Zrobiłem sprawdzenie poprawności pliku XML.
+                    Jeśli nazwa jakiegokolwiek tagu została zmieniona lub tag zostanie usunięty, 
+                    lub dodano tag, który nie powinien istnieć w strukturze XML, to wtedy plik jest nieprawidłowy.<br>
+
+                    Podczas importowania również odbywa się porównywanie dannych i użytkownik jest informowany o zmianach.
+                    Na przykład:
+                    Jeśli importujesz osobę, która już istnieje w systemie.
+                    To informuje się, że ona istnieje i że dane zostaną zaktualizowane do tych co w XML.
+                    I w dwóch kolumnach (było/jest) pokazane jest, co się zmieni.
+                </p>
+            </div>
+            <div class="one-third">
+                <h5>Systema dostępu</h5>
+                <p>
+                    Dla każdego użytkownika można skonfigurować, na jakich stronach i do jakich akcji programu ma dostęp.
+                    Sprawdzanie czy użytkownik ma dostęp zrobiłem zarówno po stronie Front jak i Back.
+                    Oprócz tego dla sprawdzenia czy pytanie robi autoryzowany użytkownik wykorzytuję token.
+                </p>
+                <h5>Routingi</h5>
+                <p>
+                    Wykorzystałem jeszcze wszędzie Resolvers.
+                    Ponieważ kiedy zacząłem pracować z aplikacją
+                    to było tak, żę  wchodzisz na stronę, widzisz pusty formularz, a w pewnym momencie
+                    nagle pojawiają się dane. Zmieniłem to.
+                </p>
+                <h5>Praca z plikami</h5>
+                <p>
+                    Zapisanie, pobranie, otwieranie w rzeglądarce, usunięcie.<br>
+                    Dla nazw folderów, w których przechowywane są pliki, użyłem hash + salt.
+                </p>
+                <h5>Struktura danych - Drzewo</h5>
+                <p>
+                    Napisałem własną klasę, która pozwolała mi pracować z danymi w drzewiastej strukturze danych.
+                    Ponieważ zaistniała potrzeba stworzenia dynamicznej liczby elementów, 
+                    i żeby w każdy element można było wejść i tam stworzyć dynamiczną liczbę elementów,
+                    i w każdy z nowo utworzonych elementów również można wejść i tam tworzyć, jak foldery w Windowsie.
+                    Ponadto każdy element drzewa można usunąć, edytować.
+                </p>
+                <h5>Przerobiłem prawie wszystkie moduły (przód, tył), które zostały wykonane przede mną</h5>
+                <p>
+                    Niestety kod napisany przez poprzedników był okropny, i rozwijać to było niemożliwie.
+                    Na początku próbowałem, ale w pewnym momencie stało się jasne, że łatwiej będzie napisać to od początku.
+                    Dlatego wyszło tak, że przerobiłem prawie wszystkie moduły, zmieniła się struktura projektu.
+                    Tym samym okazało się, że prawie cały kod tego programu był mój, że program był tylko mój.
+                    W ten sposób wyszło tak, że prawie cały kod aplikacji mój.
+                    Wymagałem od siebie, aby jakościowo wszystko zrobić, dlatego często jeszcze zajmowałem się refaktoryzacją swego kodu.
+                </p>
+                <h5>Internacjonalizacja</h5>
+            </div>
+        </div>
+      </div>
+    </body>
+</html>

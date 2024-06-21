@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CV</title>
+        <link rel="stylesheet" href="./css.css">
+    </head>
+    <body>
+        <section id="projects">
+            <h1 id="projects-title">Projekty</h1>
+            <div class="project-wrapper">
+                <div class="project-text">
+                    <h3 class="project-title">Timer</h3>
+                    <p class="project-description">
+                        Potrzebowałem timera, żeby kiedy ja długo pracuję przy komputerze przypominałby mi o tym, 
+                        że trzeba zrobić przerwę lub ćwieczenia dla oczy.
+                        Ja zacząłem szukać w internecie.
+                        I to co ja znajdowałem mi się nie podobało.
+                        Dlatego postanowiłem napisać samemu.
+                    </p>
+                    <a class="project-more" href="./pages/timer/timer.html" target="_blank">
+                        Więcej
+                    </a>
+                    <div id="demo-github-links">
+                        <a id="timer-demo" href="https://office-plankton.github.io/timer/" target="_blank">Demo</a>
+                        <a id="github-wrapper" href="https://github.com/office-plankton/timer/blob/master/scripts/scripts.js" target="_blank">
+                            <img id="github-img" src="./assets/github.png">
+                            <span id="github-name">GitHub</span>
+                        </a>
+                    </div>
+                    <small id="github-text">
+                        Ten projekt jest dobry do oceny tego, jak piszę kod. 
+                        Jest to mały projekt. Prawie cały kod znajduje się w jednym pliku JS, więc łatwo będzie go zrozumieć.
+                    </small>
+                </div>
+                <div class="project-media">
+                    <video class="video-100" autoplay muted loop>
+                        <source src="./assets/projects/timer/timer.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <hr class="project-hr">
+            <div id="project-mDPO" class="project-wrapper">
+                <div class="project-text">
+                    <h3 class="project-title">mDPO</h3>
+                    <p class="project-description">
+                        System zarządzania ochroną danych osobowych.
+                        Był to główny projekt, nad którym pracowałem w <a class="anchor" href="#previous-job-mikrobit">Mikrobit</a>.
+                        Ja pisałem ten projekt sam. Ponad 3 lata.
+                        Byłem odpowiedzialny za Front (Angular) i Back (Symfony).
+                        Oprócz napisania kodu, ja zajmowałem się jeszcze projektowaniem aplikacji razem z IOD.
+                    </p>
+                    <a class="project-more" href="./pages/mDPO/mDPO.html" target="_blank">
+                        Więcej
+                    </a>
+                </div>
+                <div class="project-media">
+                    <img class="img-100" src="./assets/projects/mDPO/page.png">
+                </div>
+            </div>
+            <hr class="project-hr">
+            <div class="project-wrapper">
+                <div class="project-text">
+                    <h3 class="project-title">Procesor</h3>
+                    <p class="project-description">
+                        Tworzenie tzw. umowy powierzenia i możliwość jej wydruku, exportu w XML, pobrania jako PDF.
+                        Póżniej XML można zaimportować do <a class="anchor" href="#project-mDPO">mDPO.</a>
+                    </p>
+                    <a class="demo" href="https://procesor.mikrobit.pl/" target="_blank">Demo</a>
+                    <small class="no-description">
+                        Jeszcze nie zrobiłem opis szczegółowy
+                    </small>
+                </div>
+                <div class="project-media">
+                    <img class="img-100" src="./assets/projects/Procesor.png">
+                </div>
+            </div>
+            <hr class="project-hr">
+            <div class="project-wrapper">
+                <div class="project-text align-start">
+                    <h3 class="project-title">Sklep mDPO</h3>
+                    <p class="project-description">
+                        Zrobiłem na Wordpress.
+                        Zrobiłem tak żeby użytkownik (nie programista) po stronie administratora mógł zmieniać wszędzie tekst, 
+                        dodawać elementy do slidera, do sekcji możliwości, zamienić obrazki.
+                        Strona responsywna.
+                    </p>
+                    <a class="demo" href="http://mdpo-sprzedaz.work.mbnet.pl/" target="_blank">Demo</a>
+                    <small class="no-description">
+                        Jeszcze nie zrobiłem opis szczegółowy
+                    </small>
+                </div>
+                <div class="project-media">
+                    <img class="img-100" src="./assets/projects/mDPO-store.png">
+                </div>
+            </div>
+            <hr class="project-hr">
+            <div class="project-wrapper">
+                <div class="project-text">
+                    <h3 class="project-title">Taśma światłowodowa</h3>
+                    <p class="project-description">
+                        Ja z swoim współlokatorem zachcieliśmy zorganizować imprezę w akademiku.
+                        Chciałam, aby na imprezie było coś niezwykłego.
+                        Rozmawiając z moim przyjacielem, powstał pomysł że można zrobić synchronizację światła z muzyką.
+                        Ja zacząłem tym się zajmować.
+                        Na razie jeszcze synchronizacja światła i muzyki dziła nie tak jak chcę,
+                        ale równoległe z tym ja wymyśliłem jeszcze różne tryby oświetlenia.
+                    </p>
+                    <a class="project-more" href="./pages/led-tape/led-tape.html" target="_blank">
+                        Więcej
+                    </a>
+                </div>
+                <div class="project-media">
+                    <video class="video-100" controls>
+                        <source src="./assets/projects/led-tape/5.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <hr class="project-hr">
+            <div class="project-wrapper">
+                <div class="project-text">
+                    <h3 class="project-title">Dron</h3>
+                    <p class="project-description">
+                        Jednego dnia podszedł do mnie nieznajomy i zaproponował wspólne zrobić drona na Arduino.
+                        Powiedział, że jest elektrykiem, a żeby zrobić drona potrzebny jest jeszcze programista.
+                        Zaproponował połączyć siły, i w procesie uczyć się nawzajem, ja będę uczyć go coś z programowania, on mnie elektryki.
+                        W przyszłości stał się moim dobrym przyjacielem.
+                    </p>
+                    <p class="project-description">
+                        To był okres, kiedy zaczynałem uczyć się programowania.
+                        Mi wtedy się wydawało żę robię z nim coś wyjątkowego.
+                        Nie wiem jak wtedy działało moje postrzeganie świata.
+                    </p>
+                    <small class="no-description">
+                        Jeszcze nie zrobiłem opis szczegółowy
+                    </small>
+                </div>
+                <div class="project-media">
+                    <img class="img-49" src="./assets/projects/quadcopter/1.jpg">
+                    <img class="img-49" src="./assets/projects/quadcopter/2.jpg">
+                </div>
+            </div>
+            <hr class="project-hr">
+            <div class="project-wrapper">
+                <div class="project-text align-start">
+                    <h3 class="project-title">Nefi</h3>
+                    <p class="project-description">
+                        W <a class="anchor" href="#previous-job-britenet">Britenet</a> pracowałem nad programem Nefi. Program do organizacji konferencji.
+                        Pisałem w React + Redux, i testy na  Cypress.
+                    </p>
+                    <small class="no-description">
+                        Jeszcze nie zrobiłem opis szczegółowy
+                    </small>
+                </div>
+                <div class="project-media">
+                    <img class="nefi-img" src="./assets/projects/nefi/1.jpg">
+                    <img class="nefi-img" src="./assets/projects/nefi/2.jpg">
+                    <img class="nefi-img" src="./assets/projects/nefi/3.jpg">
+                    <img class="nefi-img" src="./assets/projects/nefi/4.jpg">
+                    <img class="nefi-img" src="./assets/projects/nefi/5.jpg">
+                </div>
+            </div>
+            <hr class="project-hr">
+            <div class="project-wrapper">
+                <div class="project-text">
+                    <h3 class="project-title">Elementy web-interfejsu</h3>
+                    <p class="project-description bottom-5">
+                        Ja jeszcze robię własną bibliotekę elementów web-interfejsu.
+                        Moje selektory, okna modalne, tooltipy, menu, paginacja, breadcrumb itd.
+                    </p>
+                    <p class="project-description bottom-5">
+                        Zacząłem to robić dla projektu <a class="anchor" href="#project-mDPO">mDPO.</a>
+                        Miałem problemy z Bootstrap/Angular Material.
+                        Często nie mogłem zmienić wyglądu tak, jak chciałem,
+                        lub nie było funkcji, której potrzebowałem.
+                        I musiałem wymyślać coś, aby element działał tak, jak powinien.
+                        Zazwyczaj było to źle zrobiono.
+                        Denerwowało mnie to wszystko.
+                    </p>
+                    <p class="project-description bottom-5">
+                        Zacząłem więc tworzyć je sam i ostatecznie zebrałem około 20 elementów.
+                        Utworzyła się moja biblioteka elementów web-interfejsu.
+                        W moich elementach można całkowicie zmienić wygląd elementu, zmienić wygląd każdego szczegółu.
+                        I ja mogę łatwo dodawać funkcje, ponieważ element jest mój.
+                        Oprócz tego, każdy element jest autonomiczny, więc jeżeli ktoś potrzebuje użyć
+                        jednego elementu, nie potrzebuje całej biblioteki.
+                    </p>
+                    <p class="project-description bottom-5">
+                        Czuję, że u mnie całkiem nie źle wychodzi.
+                        W razie potrzeby będę rozbudowywać bibliotekę.
+                        Zobaczę, możliwe z czasem spróbuję ją też sprzedać.
+                    </p>
+                    <small class="no-description">
+                        Jeszcze nie zrobiłem opis szczegółowy
+                    </small>
+                </div>
+                <div id="web-interface-img-wrapper" class="project-media">
+                    <img class="img-100" 
+                        src="./assets/projects/Web-Interface-Elements.png">
+                </div>
+            </div>
+            <hr class="project-hr">
+            <div class="project-wrapper">
+                <div class="project-text">
+                    <h3 class="project-title">Ejst</h3>
+                    <p class="project-description">
+                        Aplikacja jest przeznaczona dla opłaty podatków do Urzędu za usługi komunalne.
+                    </p>
+                    <p class="project-description">
+                        Nie lubiłem tą aplikację. Ja chciałem rozwijać <a class="anchor" href="#project-mDPO">mDPO</a>, 
+                        ale czas od czasu trzeba było coś tam zrobić, bo byłem jedyną osobą w firmie, która znała Symfony.
+                    </p>
+                    <small class="no-description">
+                        Jeszcze nie zrobiłem opis szczegółowy
+                    </small>
+                </div>
+                <div class="project-media">
+                    <img class="img-100" src="./assets/projects/eJST.png">
+                </div>
+            </div>
+            <hr class="project-hr">
+            <div class="project-wrapper">
+                <div class="project-text">
+                    <h3 class="project-title">ISP</h3>
+                    <p class="project-description">
+                        Pomagałem innemu programiście stworzyć tą stronę na Wordpress.
+                        Napisałem swoją wtyczkę dla wysyłki SMS do użytkowników.
+                    </p>
+                    <small class="no-description">
+                        Jeszcze nie zrobiłem opis szczegółowy
+                    </small>
+                </div>
+                <div class="project-media">
+                    <img class="img-100" src="./assets/projects/Isp.png">
+                </div>
+            </div>
+            <hr id="before-other-jobs-hr">
+            <div id="other-jobs">
+                <h4 id="other-jobs-title">Pracowałem jeszcze nad takimi projektami, ale nie mam materiałów żeby zaprezentować</h4>
+                <ul id="other-jobs-list">
+                    <li class="other-job">
+                        Serwis dla organizacji podróży (Wykorzystałem Google Maps). <br>
+                        Mam pójść do uczelni i skopiować sobie projekt wtedy zaprezentuję.
+                    </li>
+                    <hr class="other-job-hr">
+                    <li class="other-job">
+                        Czajnik, który można włączać/wyłączać za pomocą aplikacji w telefonie.
+                    </li>
+                    <hr class="other-job-hr">
+                    <li class="other-job">
+                        Zamek do drzwi sterowany smartfonem.
+                    </li>
+                    <hr class="other-job-hr">
+                    <li class="other-job">
+                        Strona poświęcona sprzedarzy nieruchomośći (Wordpress).
+                    </li>
+                    <hr class="other-job-hr">
+                    <li class="other-job">
+                        Zrobiłem stronę po PSD dla gabinetu stomatologicznego.<br>
+                        Wtedy pierwszy raz szukałem pracę i to było moje zadanie żeby sprawdzić moje umiejętności.
+                        Zrobiłem stronę dobrze.
+                        Ale miałem konkurenta który zrobił jeszcze lepiej.
+                        Tak mi powiedzieli.
+                        No i nie dostałem wtedy pracę.
+                    </li>
+                    <hr class="other-job-hr">
+                    <li class="other-job">
+                        Strona po PSD dla salonu tatuaży.<br>
+                        Kiedy pierwszy raz szukałem pracę mi był potrzebny projekt w CV.
+                        Znalazłem PSD w internecie i napisałem stronę.
+                    </li>
+                    <hr class="other-job-hr">
+                    <li class="other-job">
+                        Zrobiłem jeszcze mały sklep odzierzy.<br>
+                        Tak samo jak i poprzedni projekt ten był mi potrzebny żeby dodać do CV.
+                    </li>
+                    <hr class="other-job-hr">
+                </ul>
+            </div>
+        </section>
+    </body>
+</html>
