@@ -118,8 +118,13 @@ a {
     border-radius: 5px;
 }
 
-.align-start {
+.align-start-20 {
     margin-top: 20%;
+    align-self: flex-start;
+}
+
+.align-start-15 {
+    margin-top: 15%;
     align-self: flex-start;
 }
 
