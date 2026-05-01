@@ -1,0 +1,92 @@
+/*
+ * Reset css
+ */
+p, h4, h5 {
+    margin: 0;
+}
+
+body {
+    line-height: 1;
+}
+
+/*
+ * Global styles
+ */
+* {
+    box-sizing: border-box;
+}
+
+/*
+ * Images
+ */
+#images-wrapper {
+    margin: 0 auto;
+    width: 1350px;
+    font-family: 'Expletus Sans', sans-serif;
+    font-size: 12px;
+}
+
+#images-wrapper img {
+    width: 100%;
+}
+
+#images-text {
+    margin-top: 4px;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+}
+
+/*
+ * Text
+ */
+#text-wrapper {
+    margin: 35px auto 0;
+    width: 900px;
+    
+    font-family: 'Expletus Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.introduction-p {
+    margin-top: 12px;
+    text-align: center;
+}
+
+#description-work-title {
+    margin: 40px 0 32px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/*
+ * Description work
+ */
+#flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.one-third {
+    flex-basis: 33%;
+}
+
+.one-third > h5 {
+    font-family: 'Tilt Neon', sans-serif;
+    font-size: 14px;
+}
+
+.one-third > p {
+    margin-bottom: 18px;
+}
+
+@font-face {
+    font-family: "Tilt Neon";
+    src: url(./assets/fonts/Tilt-Neon.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Expletus Sans";
+    src: url(./assets/fonts/Expletus-Sans.ttf) format('truetype');
+}
